@@ -34,17 +34,19 @@ export const links = [
   },
 ] as const;
 
-export const education = [
+export const educationData = [
   {
     title: "Computer Software Engineering",
     school: "SMK Negeri 3 Metro",
     location: "Metro, Lampung",
+    date: "2018 - 2021",
     icon: React.createElement(FaSchool),
   },
   {
     title: "Bachelor of Informatics",
     school: "Atma Jaya Yogyakarta University",
     location: "Sleman, Yogyakarta",
+    date: "2021 - Present",
     icon: React.createElement(FaGraduationCap),
   },
 ];
