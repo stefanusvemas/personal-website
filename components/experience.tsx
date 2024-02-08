@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { educationData } from "@/lib/data";
+import { experiencesData } from "@/lib/data";
 import { useInView } from "react-intersection-observer";
 import {
   VerticalTimeline,
@@ -9,18 +9,18 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-export default function Education() {
+export default function experience() {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
   return (
-    <section id="education" className="mb-28 sm:mb-40 scroll-mt-28" ref={ref}>
+    <section id="experience" className="mb-28 sm:mb-40 scroll-mt-28" ref={ref}>
       <h2 className="text-3xl mb-4 font-medium capitalize text-center">
-        Education
+        Experience
       </h2>
 
       <VerticalTimeline lineColor="">
-        {educationData.map((data, index) => (
+        {experiencesData.map((data, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               visible={inView}
@@ -43,7 +43,7 @@ export default function Education() {
                 fontSize: "1.5rem",
               }}>
               <h3 className="font-semibold capitalize">{data.title}</h3>
-              <h4>{data.school}</h4>
+              <h4>{data.description}</h4>
               <p>{data.location}</p>
             </VerticalTimelineElement>
           </React.Fragment>

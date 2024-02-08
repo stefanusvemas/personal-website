@@ -44,7 +44,7 @@ export const educationData = [
   },
   {
     title: "Bachelor of Informatics",
-    school: "Atma Jaya Yogyakarta University",
+    school: "Universitas Atma Jaya Yogyakarta",
     location: "Sleman, Yogyakarta",
     date: "2021 - Present",
     icon: React.createElement(FaGraduationCap),
@@ -54,7 +54,7 @@ export const educationData = [
 export const experiencesData = [
   {
     title: "Web Developer Intern",
-    location: "Metro, Lampung",
+    location: "Naistudio",
     description:
       "I worked as a web developer intern for 3 months. I learned HTML, CSS, JavaScript and PHP.",
     icon: React.createElement(CgWorkAlt),
@@ -62,15 +62,15 @@ export const experiencesData = [
   },
   {
     title: "Assistant Lecturer of Introduction to Artificial Intelligence",
-    location: "Sleman, Yogyakarta",
+    location: "Universitas Atma Jaya Yogyakarta",
     description:
-      "my main responsibility is to support and assist in the delivery of the introductory course on artificial intelligence. I am tasked with aiding the instructor in designing, managing, and developing the curriculum, as well as providing support to students in understanding fundamental concepts of artificial intelligence.",
+      "My main responsibility is to support and assist in the delivery of the introductory course on artificial intelligence. I am tasked with aiding the instructor in designing, managing, and developing the curriculum, as well as providing support to students in understanding fundamental concepts of artificial intelligence.",
     icon: React.createElement(FaChalkboardTeacher),
     date: "2023",
   },
   {
     title: "Assistant Lecturer of Database Administration",
-    location: "Sleman, Yogyakarta",
+    location: "Universitas Atma Jaya Yogyakarta",
     description: "-",
     icon: React.createElement(FaChalkboardTeacher),
     date: "2024",
