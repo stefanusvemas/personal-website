@@ -2,6 +2,7 @@
 
 import React from "react";
 import { educationData } from "@/lib/data";
+import { useInView } from "react-intersection-observer";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -9,8 +10,9 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 export default function Education() {
+  const { ref, inView } = useInView();
   return (
-    <section id="education">
+    <section id="education" ref={ref}>
       <h2 className="text-3xl mb-4 font-medium capitalize text-center">
         Education
       </h2>
@@ -19,6 +21,7 @@ export default function Education() {
         {educationData.map((data, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+              visible={inView}
               contentStyle={{
                 visibility: "visible",
                 background: "#f3f4f6",
