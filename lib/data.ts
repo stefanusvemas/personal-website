@@ -2,6 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaGraduationCap, FaSchool, FaChalkboardTeacher } from "react-icons/fa";
 import librariaImg from "@/public/libraria.png";
+import cineIdImg from "@/public/cineid.jpg";
+import thetaImg from "@/public/theta.png";
+import laundryImg from "@/public/laundry.png";
 
 export const links = [
   {
@@ -81,16 +84,30 @@ export const projectsData = [
   {
     title: "Libraria",
     description:
-      "A web app for managing library. It has features like adding, updating and deleting books, borrowing and returning books, and searching books by title, author, and category.",
+      "Libraria is a Laravel-based web application for library management. With intuitive features such as book management, borrowing, returning, and search, it ensures smooth library operations.",
     tags: ["Laravel", "SQL", "Bootstrap"],
     imageUrl: librariaImg,
   },
   {
-    title: "Libraria",
+    title: "Cine.id",
     description:
-      "A web app for managing library. It has features like adding, updating and deleting books, borrowing and returning books, and searching books by title, author, and category.",
-    tags: ["Laravel", "SQL", "Bootstrap"],
-    imageUrl: librariaImg,
+      "Cine.id is hassle-free online movie ticketing. Browse, select, and purchase tickets seamlessly from your smartphone. Utilizing Flutter for a seamless user experience. Powered by Laravel for its robust backend Rest API infrastructure.",
+    tags: ["Flutter", "SQL", "Laravel"],
+    imageUrl: cineIdImg,
+  },
+  {
+    title: "Theta",
+    description:
+      "Theta manages pharmacy distribution, aiding staff with inventory and deliveries. Integrated with Google Maps API for efficient routes and costs. Plus, it syncs with a courier mobile app for smoother deliveries.",
+    tags: ["Flutter", "SQL", "Laravel"],
+    imageUrl: thetaImg,
+  },
+  {
+    title: "Laundry Management System",
+    description:
+      "Java-based desktop app for laundry management. Simplifies order processing and inventory tracking.",
+    tags: ["Java", "SQL"],
+    imageUrl: laundryImg,
   },
 ] as const;
 

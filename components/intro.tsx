@@ -1,16 +1,28 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import vemasImg from "@/public/vemas.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
+  const { ref, inView } = useInView({
+    threshold: 0.9,
+  });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
   return (
-    <section id="home" className="scroll-mt-[100rem]">
+    <section id="home" ref={ref} className="scroll-mt-[100rem]">
       <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:justify-center md:items-start lg:gap-10">
         <motion.div
           className="text-center md:text-left"

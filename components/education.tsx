@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { educationData } from "@/lib/data";
 import { useInView } from "react-intersection-observer";
 import {
@@ -8,13 +8,21 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Education() {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    threshold: 0.4,
   });
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
+      setActiveSection("Education");
+    }
+  }, [inView, setActiveSection, timeOfLastClick]);
   return (
-    <section id="education" className="mb-28 sm:mb-40 scroll-mt-28" ref={ref}>
+    <section id="education" className="mb-28 sm:mb-40 scroll-mt-36" ref={ref}>
       <h2 className="text-3xl mb-4 font-medium capitalize text-center">
         Education
       </h2>

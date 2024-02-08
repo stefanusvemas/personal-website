@@ -1,12 +1,26 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function About() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection, timeOfLastClick]);
+
   return (
     <motion.section
-      className="mt-40 mb-28 max-w-[45rem] mx-auto text-center leading-8 sm:mb-40 scroll-mt-28"
+      ref={ref}
+      className="mt-40 mb-28 max-w-[45rem] mx-auto text-center leading-8 sm:mb-40 scroll-mt-36"
       initial={{
         opacity: 0,
         scale: 0.95,
