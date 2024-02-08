@@ -85,6 +85,13 @@ export const projectsData = [
     tags: ["Laravel", "SQL", "Bootstrap"],
     imageUrl: librariaImg,
   },
+  {
+    title: "Libraria",
+    description:
+      "A web app for managing library. It has features like adding, updating and deleting books, borrowing and returning books, and searching books by title, author, and category.",
+    tags: ["Laravel", "SQL", "Bootstrap"],
+    imageUrl: librariaImg,
+  },
 ] as const;
 
 export const skillsData = [
