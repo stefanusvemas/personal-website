@@ -1,10 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaGraduationCap, FaSchool, FaChalkboardTeacher } from "react-icons/fa";
-import librariaImg from "@/public/libraria.png";
-import cineIdImg from "@/public/cineid.jpg";
-import thetaImg from "@/public/theta.png";
-import laundryImg from "@/public/laundry.png";
+import librariaImg from "@/public/libraria.webp";
+import cineIdImg from "@/public/cineid.webp";
+import thetaImg from "@/public/theta.webp";
+import laundryImg from "@/public/laundry.webp";
 
 export const links = [
   {
