@@ -29,7 +29,7 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}>
           <p>Hi👋, my name is</p>
-          <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl">
+          <h1 className="text-3xl font-bold md:text-5xl lg:text-6xl">
             Stefanus Vemas <br />
             Aditya Mahardika
           </h1>
