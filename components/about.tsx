@@ -42,8 +42,8 @@ export default function About() {
       id="about">
       <h2 className="text-3xl mb-2 font-medium capitalize">About Me</h2>
       <p className="">
-        I'm deeply passionate about technology. Whether it's coding a new
-        software application, designing user interfaces, I thrive on the
+        I&apos;m deeply passionate about technology. Whether it&apos;s coding a
+        new software application, designing user interfaces, I thrive on the
         challenges and opportunities presented by the ever-evolving field of
         informatics. Outside of academics, I enjoy immersing myself in various
         extracurricular activities, from participating in coding competitions to
