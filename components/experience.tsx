@@ -10,7 +10,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-export default function experience() {
+export default function Experience() {
   const { ref, inView } = useInView({
     threshold: 0.3,
   });
