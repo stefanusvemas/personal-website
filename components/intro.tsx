@@ -14,7 +14,7 @@ export default function Intro() {
   const { ref, inView } = useInView({
     threshold: 0.9,
   });
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   useEffect(() => {
     if (inView) {
@@ -68,6 +68,10 @@ export default function Intro() {
         }}>
         <Link
           href="#contact"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
           className="group mr-2 border border-white border-opacity-40 bg-white bg-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition">
           Contact me{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />

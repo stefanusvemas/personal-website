@@ -22,7 +22,7 @@ const fadeInAnimationsVariants = {
 
 export default function Skills() {
   const { ref, inView } = useInView({
-    threshold: 0.35,
+    threshold: 0.5,
   });
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
@@ -35,7 +35,7 @@ export default function Skills() {
     <section
       ref={ref}
       id="skills"
-      className="mt-40 mb-28 max-w-[53rem] text-center mx-auto leading-8 sm:mb-40 scroll-mt-36">
+      className="mb-28 max-w-[53rem] text-center mx-auto leading-8 sm:mb-40 scroll-mt-36">
       <h2 className="text-3xl mb-4 font-medium capitalize text-center">
         My Skills
       </h2>
