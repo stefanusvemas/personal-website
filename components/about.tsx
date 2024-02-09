@@ -42,13 +42,14 @@ export default function About() {
       id="about">
       <h2 className="text-3xl mb-2 font-medium capitalize">About Me</h2>
       <p className="">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-        voluptatem, rerum optio debitis quia aliquam assumenda numquam modi
-        tempore maiores porro ipsa corrupti ad possimus repellat harum ratione
-        alias quo. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Quod ex dolorum laborum cum pariatur deleniti fugiat esse, tempora aut
-        aliquid facere repellat minus placeat ullam, vel necessitatibus tenetur
-        illo. Ipsam.
+        I'm deeply passionate about technology. Whether it's coding a new
+        software application, designing user interfaces, I thrive on the
+        challenges and opportunities presented by the ever-evolving field of
+        informatics. Outside of academics, I enjoy immersing myself in various
+        extracurricular activities, from participating in coding competitions to
+        collaborating on innovative projects with my peers. I believe in the
+        power of teamwork and continuous learning, constantly seeking ways to
+        expand my skill set and broaden my perspectives.
       </p>
     </motion.section>
   );
