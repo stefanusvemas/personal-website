@@ -44,7 +44,7 @@ export const educationData = [
     title: "Bachelor of Informatics",
     school: "Universitas Atma Jaya Yogyakarta",
     location: "Sleman, Yogyakarta",
-    date: "2021 - Present",
+    date: "2021 - 2025",
     icon: React.createElement(FaGraduationCap),
   },
   {
@@ -102,9 +102,9 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Smart Truck Sawit",
+    title: "Smart Weighing System for Palm Oil FFB",
     description:
-      "A full-stack application built with .NET Core and Next.js for managing palm oil transport. Integrated with smart conveyors (GPS & weight sensors) to track harvest origin, featuring real-time truck tracking (SignalR), and GIS.",
+      "A full-stack .NET Core & Next.js application for palm oil transport management, integrated with smart conveyors (GPS & weight sensors), real-time truck tracking, and GIS.",
     tags: ["Next.js", ".NET Core", "PostGIS"],
     imageUrl: smartTruckImg,
   },

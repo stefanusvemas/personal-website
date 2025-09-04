@@ -42,14 +42,13 @@ export default function About() {
       id="about">
       <h2 className="text-3xl mb-2 font-medium capitalize">About Me</h2>
       <p className="">
-        I&apos;m deeply passionate about technology. Whether it&apos;s coding a
-        new software application, designing user interfaces, I thrive on the
-        challenges and opportunities presented by the ever-evolving field of
-        informatics. Outside of academics, I enjoy immersing myself in various
-        extracurricular activities, from participating in coding competitions to
-        collaborating on innovative projects with my peers. I believe in the
-        power of teamwork and continuous learning, constantly seeking ways to
-        expand my skill set and broaden my perspectives.
+        Passionate about technology and problem-solving, with expertise in
+        backend development, database management, and geospatial applications.
+        Committed to tackling challenges in the ever-evolving field of
+        informatics, with experience that goes beyond coding through fieldwork
+        in palm oil plantations and processing sites while developing the smart
+        weighing system for palm oil FFB gaining valuable insights into real
+        operations and how to align them with technological solutions.
       </p>
     </motion.section>
   );

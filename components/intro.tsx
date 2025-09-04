@@ -35,8 +35,9 @@ export default function Intro() {
           </h1>
           <div className="flex items-center justify-center md:items-end md:justify-end">
             <p className="text-sm w-80 md:text-right md:text-base lg:text-lg">
-              Undergraduate Informatics Student at Atma Jaya Yogyakarta
-              University
+              Informatics graduate
+              <br />
+              Universitas Atma Jaya Yogyakarta
             </p>
           </div>
         </motion.div>
